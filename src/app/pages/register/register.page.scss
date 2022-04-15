@@ -17,23 +17,31 @@
     margin-top: 110px;
     padding: 20px;
     width: 400px;
-    height: 650px;
+    height: 680px;
     background-color: white;
     opacity: 65%;
 }
 
-.welcome{
+.title{
     text-align: center;
     margin-bottom: 30px;
+    color: black;
 }
+
 .login_title{
     text-align: center;
+    color: black;
 }
+
 .register_button{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    color: black;
+}
+.input{
+    color: black;
 }
 
 
