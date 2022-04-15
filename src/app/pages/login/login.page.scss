@@ -12,25 +12,28 @@
 .card{
     padding: 20px;
     height: 340px;
+    background-color: white;
+    opacity: 65%;
 }
 
-.welcome{
-    text-align: center;
-    margin-bottom: 30px;
-}
 .login_title{
     text-align: center;
+    color: black;
 }
 .login_button{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    color: black;
 }
-// body{
-//     background-image: url(darksouls_xbpx.jpeg);
-//     background-repeat: no-repeat;
-//     width: 100%;
-// }
+.welcome{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+.input{
+    color: black;
+}
 
 

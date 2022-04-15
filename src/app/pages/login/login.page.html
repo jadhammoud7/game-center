@@ -5,31 +5,30 @@
 </ion-header>
 
 <body>
-    <ion-content>
-      <div class="centered">
-        <ion-card class="card">
-          <ion-card-header>
-            <ion-card-subtitle class="welcome">Welcome Back!</ion-card-subtitle>
-            <ion-card-title class="login_title">login</ion-card-title>
-          </ion-card-header>
-        
-          <ion-card-content>
-            <ion-item>
-              <ion-label position="floating" name="email">Email</ion-label>
-              <ion-input type="email"></ion-input>
-            </ion-item>
-            <ion-item>
-              <ion-label position="floating" type="password" name="password">Password</ion-label>
-              <ion-input type="password"></ion-input>
-            </ion-item>
-          </ion-card-content>
-          Dont have an account?<a href="register"> Register now!</a>
-          <br>
-          <ion-button class="login_button" color="primary">Login</ion-button>
-        </ion-card>
-      </div>
-    </ion-content>
-
+  <ion-content>
+    <div class="centered">
+      <ion-card class="card">
+        <ion-card-header>
+          <ion-card-subtitle class="welcome">Welcome Back!</ion-card-subtitle>
+          <ion-card-title class="login_title">Login</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content >
+          <ion-item color="Light" class="input">
+            <ion-label position="floating" name="Username">Username</ion-label>
+            <ion-input type="string" ></ion-input>
+          </ion-item>
+          <ion-item class="input"color="Light">
+            <ion-label position="floating" type="password" name="password">Password</ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+        </ion-card-content>
+        Dont have an account?<a href="register"><strong> Register now!</strong></a>
+        <br>
+        <ion-button class="login_button">Login</ion-button>
+      </ion-card>
+    </div>
+  </ion-content>
   
 </body>
 

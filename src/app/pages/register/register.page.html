@@ -4,27 +4,57 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="centered">
-    <ion-card class="card">
-      <ion-card-header>
-        <ion-card-subtitle class="title">Be Part Of Our Family!</ion-card-subtitle>
-        <ion-card-title class="login_title">login</ion-card-title>
-      </ion-card-header>
+<body>
+
+    <ion-content>
+      <div class="centered">
+        <ion-card class="card">
+          <ion-card-header>
+            <ion-card-subtitle class="title">Be Part Of Our Family!</ion-card-subtitle>
+            <ion-card-title class="login_title">Register</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <ion-item>
+              <ion-label position="floating" name="first_name">First Name</ion-label>
+              <ion-input type="string"></ion-input>
+            </ion-item>
     
-      <ion-card-content>
-        <ion-item>
-          <ion-label position="floating" name="email">Email</ion-label>
-          <ion-input type="email"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="floating" type="password" name="password">Password</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
-      </ion-card-content>
-      Dont have an account?<a href="register"> Register now!</a>
-      <br>
-      <ion-button class="login_button" color="primary">Login</ion-button>
-    </ion-card>
-  </div>
-</ion-content>
+            <ion-item>
+              <ion-label position="floating" name="last_name">Last Name</ion-label>
+              <ion-input type="string"></ion-input>
+            </ion-item>
+    
+            <ion-item>
+              <ion-label position="floating" name="email">Email</ion-label>
+              <ion-input type="email"></ion-input>
+            </ion-item>
+    
+            <ion-item>
+              <ion-label position="floating" name="address">Address</ion-label>
+              <ion-input type="string"></ion-input>
+            </ion-item>
+    
+            <ion-item>
+              <ion-label position="floating" name="phone_number">Phone Number</ion-label>
+              <ion-input type="string"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating" name="username"> Username</ion-label>
+              <ion-input type="string"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating" name="password">Password</ion-label>
+              <ion-input type="password"></ion-input>
+            </ion-item>
+            <br>
+            <ion-button class="register_button" color="primary">Register</ion-button>
+          </ion-card-content>
+    
+        </ion-card>
+      </div>
+    </ion-content>  
+
+</body>
+
