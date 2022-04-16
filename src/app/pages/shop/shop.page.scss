@@ -64,9 +64,131 @@
     background-image: url(hitman_ps4.jpeg);
     
 }
-
+.image8{
+    background-image: url(codps3.jpg);
+    
+}
+.image9{
+    background-image: url(sniper_ps3.jpg);
+    
+}
+.image10{
+    background-image: url(riptide_ps3.jpg);
+    
+}
+.image11{
+    background-image: url(watchdogs_ps3.jpeg);
+    
+}
+.image12{
+    background-image: url(rrr_ps3.jpeg);
+    
+}
+.image13{
+    background-image: url(cod_ps4.png);
+    
+}
+.image14{
+    background-image: url(ghost_ps4.jpg);
+    
+}
+.image15{
+    background-image: url(modernwarfare_ps4.jpg);
+    
+}
+.image16{
+    background-image: url(ps4cd.png);
+    
+}
+.image17{
+    background-image: url(residentevil_ps4.jpg);
+    
+}
+.image18{
+    background-image: url(lastofus_ps4.jpg);
+    
+}
+.image19{
+    background-image: url(pathless_ps5.jpg);
+    
+}
+.image20{
+    background-image: url(godfall_ps5.jpeg);
+    
+}
+.image21{
+    background-image: url(demon_ps5.jpg);
+    
+}
+.image22{
+    background-image: url(coldwar_ps5.jpg);
+    
+}
+.image23{
+    background-image: url(ac_ps5.jpg);
+    
+}
+.image24{
+    background-image: url(clnak_ps5.jpg);
+    
+}
+.image25{
+    background-image: url(crash_xbox.jpg);
+    
+}
+.image26{
+    background-image: url(gearofwae_xbox.jpg);
+    
+}
+.image27{
+    background-image: url(infinite_xbox.jpg);
+    
+}
+.image28{
+    background-image: url(marvel_xbox.jpg);
+    
+}
+.image29{
+    background-image: url(sonic_xbox.jpeg);
+    
+}
+.image30{
+    background-image: url(darksouls_xbpx.jpeg);
+    
+}
+.image31{
+    background-image: url(ps3_controller.png);
+    
+}
+.image32{
+    background-image: url(ps4_controller.jpg);
+    
+}
+.image33{
+    background-image: url(ps5_controller.png);
+    
+}
+.image34{
+    background-image: url(xbox_controller.png);
+    
+}
+.image35{
+    background-image: url(controller_charge.jpg);
+    
+}
+.image36{
+    background-image: url(samsung_charge.jpg);
+    
+}
+.image37{
+    background-image: url(iphone_charge.jpg);
+    
+}
+.image38{
+    background-image: url(huawei_charge.jpg);
+    
+}
 .card_title{
-    color: black;
     text-align: center;
     text-decoration: underline;
 }
@@ -79,8 +201,6 @@
 .hi h1{
     font-size: 15px;
 }
-
-
 
 
 .scrolling-wrapper {
@@ -109,26 +229,66 @@
   .buy_btn:hover{
       background-color:#f4f5f8;
   }
-  .objects{
+  .ps3{
         display: flex;
         justify-content: center;
     
         margin-top: 50px;
 
-        height: 1300px;
+        height: 2600px;
         background-color: white;
         opacity: 65%;
   }
-  .hi1 h1,button{
-      font-size: 20px;
-  }
-  .offers{
+  .ps4{
     display: flex;
     justify-content: center;
 
     margin-top: 50px;
 
-    height: 1420px;
+    height: 2500px;
     background-color: white;
     opacity: 65%;
+}
+.ps5{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+
+    height: 2450px;
+    background-color: white;
+    opacity: 65%;
+}
+.xbox{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+
+    height: 2650px;
+    background-color: white;
+    opacity: 65%;
+}
+.charges{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+
+    height: 2650px;
+    background-color: white;
+    opacity: 65%;
+}
+.controllers{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+
+    height: 1400px;
+    background-color: white;
+    opacity: 65%;
+}
+  .hi1 h1,button{
+      font-size: 20px;
   }
