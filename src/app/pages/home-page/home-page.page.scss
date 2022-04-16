@@ -16,17 +16,104 @@
     
 }
 .what_we_have{
+    display: flex;
+    justify-content: center;
+
     margin-top: 50px;
     margin-left: 500px;
     margin-right: 500px;
-    height: 900px;
+    height: 650px;
     background-color: white;
     opacity: 65%;
-
 }
+
 .h1{
     color: black;
     text-decoration: underline;
     
-
 }
+
+.image{
+    background-image: url(icon1.png);
+    
+}
+.image1{
+    background-image: url(icon2.png);
+    
+}
+.image2{
+    background-image: url(cables.png);
+    
+}
+.image3{
+    background-image: url(coldwar_ps5.jpg);
+    
+}
+.image4{
+    background-image: url(star.png);
+    
+}
+.image5{
+    background-image: url(halfstar.png);
+    
+}
+
+.card_title{
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+.hi{
+    margin-left: 120px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+}
+.hi h1{
+    font-size: 15px;
+}
+
+
+
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  
+    .card {
+      display: inline-block;
+    }
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 13.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .buy_btn:hover{
+      background-color:#f4f5f8;
+  }
+  .objects{
+        display: flex;
+        justify-content: center;
+    
+        margin-top: 50px;
+        margin-left: 500px;
+        margin-right: 500px;
+        height: 1850px;
+        background-color: white;
+        opacity: 65%;
+    
+    
+  }
