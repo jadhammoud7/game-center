@@ -11,5 +11,7 @@ export class HomePagePage implements OnInit {
 
   ngOnInit() {
   }
-
+buy(){
+  alert('This product is purchased');
+}
 }

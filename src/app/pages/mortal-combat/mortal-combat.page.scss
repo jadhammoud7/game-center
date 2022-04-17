@@ -19,13 +19,13 @@
     background-color: white;
     opacity: 65%;
 }
-.comments{
+.cd_info{
     display: flex;
     justify-content: center;
 
     margin-top: 50px;
 
-    height: 200px;
+    height: 1900px;
     background-color: white;
     opacity: 65%;
 }
@@ -42,17 +42,12 @@
 .hi h1{
     font-size: 15px;
 }
-.image1{
-    background-image: url(person.png);
-}
-.image2{
-    background-image: url(icon2.png);
-}
-.image3{
-    background-image: url(delivery.png);
-}
+
 .input{
     color: black;
+}
+.image1{
+    background-image: url(icon1.png);
 }
 
 

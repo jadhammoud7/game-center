@@ -35,6 +35,14 @@ const routes: Routes = [
     path: 'aboutus',
     loadChildren: () => import('./pages/aboutus/aboutus.module').then( m => m.AboutusPageModule)
   },
+  {
+    path: 'mortal-combat',
+    loadChildren: () => import('./pages/mortal-combat/mortal-combat.module').then( m => m.MortalCombatPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+  },
 ];
 
 @NgModule({

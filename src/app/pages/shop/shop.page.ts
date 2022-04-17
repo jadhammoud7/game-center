@@ -11,5 +11,7 @@ export class ShopPage implements OnInit {
 
   ngOnInit() {
   }
-
+  buy(){
+    alert('This product is purchased');
+  }
 }
