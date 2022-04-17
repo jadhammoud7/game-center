@@ -1,0 +1,46 @@
+.card{
+    margin-top: 65px;
+    width:100%;
+    background-color: white;
+    opacity: 50%;
+    height: 80px;
+}
+.welcome{
+    color: black;
+    
+}
+.what_we_have{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+
+    height: 700px;
+    background-color: white;
+    opacity: 65%;
+}
+.card_title{
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+.hi{
+    margin-left: 70px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+}
+.hi h1{
+    font-size: 15px;
+}
+.image1{
+    background-image: url(person.png);
+}
+.image2{
+    background-image: url(icon2.png);
+}
+.image3{
+    background-image: url(delivery.png);
+}
+
+
