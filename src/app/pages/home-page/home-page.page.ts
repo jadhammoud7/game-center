@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
@@ -7,11 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePagePage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 buy(){
   alert('This product is purchased');
 }
+home(){
+  this.router.navigate(['/home-page']);
+}
+
 }
