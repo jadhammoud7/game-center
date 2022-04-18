@@ -2,12 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-mortal-combat',
-  templateUrl: './mortal-combat.page.html',
-  styleUrls: ['./mortal-combat.page.scss'],
+  selector: 'app-reptide',
+  templateUrl: './reptide.page.html',
+  styleUrls: ['./reptide.page.scss'],
 })
-export class MortalCombatPage implements OnInit {
-vid='https://www.youtube.com/embed/mWytXS73aFI';
+export class ReptidePage implements OnInit {
+
+  vid='https://www.youtube.com/embed/mEmXLn7mSM8';
   constructor(private dom: DomSanitizer) { }
 
   ngOnInit() {
