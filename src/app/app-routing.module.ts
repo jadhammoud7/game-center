@@ -24,10 +24,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/home-page/home-page.module').then( m => m.HomePagePageModule)
   },
   {
-    path: 'home-page',
-    loadChildren: () => import('./pages/home-page/home-page.module').then( m => m.HomePagePageModule)
-  },
-  {
     path: 'shop',
     loadChildren: () => import('./pages/shop/shop.module').then( m => m.ShopPageModule)
   },
@@ -38,11 +34,8 @@ const routes: Routes = [
   {
     path: 'mortal-combat',
     loadChildren: () => import('./pages/mortal-combat/mortal-combat.module').then( m => m.MortalCombatPageModule)
-  },
-  {
-    path: 'profile',
-    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
-  },
+  }
+
 ];
 
 @NgModule({

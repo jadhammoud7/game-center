@@ -1,5 +1,5 @@
 .card{
-    margin-top: 65px;
+    margin-top: 0px;
     width:100%;
     background-color: white;
     opacity: 50%;
@@ -16,6 +16,16 @@
     margin-top: 50px;
 
     height: 700px;
+    background-color: white;
+    opacity: 65%;
+}
+.trailer{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+
+    height: 500px;
     background-color: white;
     opacity: 65%;
 }

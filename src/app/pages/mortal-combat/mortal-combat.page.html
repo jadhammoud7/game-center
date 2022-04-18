@@ -11,12 +11,15 @@
         <ion-infinite-scroll-content>
           <ion-card class="card">
             <ion-card-content class="welcome">
-              <h1><strong>Know More About Us!</strong></h1>
+              <h1><strong>Mortal Combat</strong></h1>
             </ion-card-content>
           </ion-card>
-          <ion-card class="what_we_have">
+          <ion-card class="trailer">
             <ion-card-content>
               <h1 style="color: black;"> <strong>Trailer</strong></h1>
+              <iframe width="300" height="320" [src]="sanitize(vid)" 
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+               encrypted-media; gyroscope; picture-in-picture" ></iframe>
             </ion-card-content>
           </ion-card>
 
