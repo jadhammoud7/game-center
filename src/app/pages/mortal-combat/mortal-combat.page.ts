@@ -7,7 +7,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./mortal-combat.page.scss'],
 })
 export class MortalCombatPage implements OnInit {
-vid='https://www.youtube.com/embed/UoTams2yc0s';
+vid='https://youtu.be/l4z2iUnQlnA';
   constructor(private dom: DomSanitizer) { }
 
   ngOnInit() {
