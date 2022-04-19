@@ -82,6 +82,54 @@ const routes: Routes = [
   {
     path: 'residentevil',
     loadChildren: () => import('./pages/residentevil/residentevil.module').then( m => m.ResidentevilPageModule)
+  },
+  {
+    path: 'clank',
+    loadChildren: () => import('./pages/clank/clank.module').then( m => m.ClankPageModule)
+  },
+  {
+    path: 'creed',
+    loadChildren: () => import('./pages/creed/creed.module').then( m => m.CreedPageModule)
+  },
+  {
+    path: 'coldwar',
+    loadChildren: () => import('./pages/coldwar/coldwar.module').then( m => m.ColdwarPageModule)
+  },
+  {
+    path: 'demon',
+    loadChildren: () => import('./pages/demon/demon.module').then( m => m.DemonPageModule)
+  },
+  {
+    path: 'godoffall',
+    loadChildren: () => import('./pages/godoffall/godoffall.module').then( m => m.GodoffallPageModule)
+  },
+  {
+    path: 'pathless',
+    loadChildren: () => import('./pages/pathless/pathless.module').then( m => m.PathlessPageModule)
+  },
+  {
+    path: 'crash',
+    loadChildren: () => import('./pages/crash/crash.module').then( m => m.CrashPageModule)
+  },
+  {
+    path: 'darksouls',
+    loadChildren: () => import('./pages/darksouls/darksouls.module').then( m => m.DarksoulsPageModule)
+  },
+  {
+    path: 'gearofwar',
+    loadChildren: () => import('./pages/gearofwar/gearofwar.module').then( m => m.GearofwarPageModule)
+  },
+  {
+    path: 'infinite',
+    loadChildren: () => import('./pages/infinite/infinite.module').then( m => m.InfinitePageModule)
+  },
+  {
+    path: 'legos',
+    loadChildren: () => import('./pages/legos/legos.module').then( m => m.LegosPageModule)
+  },
+  {
+    path: 'sonic',
+    loadChildren: () => import('./pages/sonic/sonic.module').then( m => m.SonicPageModule)
   }
 
 ];

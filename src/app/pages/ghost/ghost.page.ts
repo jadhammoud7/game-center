@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class GhostPage implements OnInit {
 
-  vid='https://www.youtube.com/embed/Zbq7BnsQhrw';
+  vid='https://www.youtube.com/embed/mniWW2haNnY';
   constructor(private dom: DomSanitizer,private router: Router) { }
 
   ngOnInit() {
