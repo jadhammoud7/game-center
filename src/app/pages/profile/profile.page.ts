@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CommentsService } from 'src/app/apis/comments.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,8 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./profile.page.scss'],
 })
 export class ProfilePage implements OnInit {
-
-  constructor(private router: Router) { }
+  constructor(private router: Router,private service: CommentsService) { }
 
   ngOnInit() {
   }
@@ -25,4 +25,7 @@ export class ProfilePage implements OnInit {
   profile(){
     this.router.navigate(['/profile']);
   }
+//bhot function w b2alba
+//     this.service.addNewComments();
+
 }
