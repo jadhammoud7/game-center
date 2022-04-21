@@ -11,18 +11,17 @@ export class AboutusPage implements OnInit {
 
   ngOnInit() {
   }
-  home(){
-    this.router.navigate(['/home-page']);
-  }
-  shop(){
-    this.router.navigate(['/shop']);
-  }
-  aboutus(){
-    this.router.navigate(['/aboutus']);
-  }
-  profile(){
-    this.router.navigate(['/profile']);
-  }
-  public submit(){
-  }
+
+home(){
+  this.router.navigate(['/home-page']);
+}
+shop(){
+  this.router.navigate(['/shop']);
+}
+aboutus(){
+  this.router.navigate(['/aboutus']);
+}
+profile(){
+  this.router.navigate(['/profile']);
+}
 }

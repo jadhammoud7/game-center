@@ -32,10 +32,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/shop/shop.module').then( m => m.ShopPageModule)
   },
   {
-    path: 'aboutus',
-    loadChildren: () => import('./pages/aboutus/aboutus.module').then( m => m.AboutusPageModule)
-  },
-  {
     path: 'mortal-combat',
     loadChildren: () => import('./pages/mortal-combat/mortal-combat.module').then( m => m.MortalCombatPageModule)
   },
@@ -130,7 +126,12 @@ const routes: Routes = [
   {
     path: 'sonic',
     loadChildren: () => import('./pages/sonic/sonic.module').then( m => m.SonicPageModule)
-  }
+  },
+  {
+    path: 'aboutus',
+    loadChildren: () => import('./pages/aboutus/aboutus.module').then( m => m.AboutusPageModule)
+  },
+
 
 ];
 
@@ -140,4 +141,6 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+
+}
