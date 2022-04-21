@@ -44,15 +44,21 @@
         <ion-card class="comments">
           <ion-card-content>
             <h1 style="color: black;">Give Us Your Thoughts!</h1>
-            <ion-item>
-                <ion-textarea  name="email" placeholder="enter your email"></ion-textarea>
+            <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+              <ion-item color="Light" class="input">
+                <ion-label position="floating" name="email">Email</ion-label>
+                <ion-input formControlName="email" type="email"></ion-input>
               </ion-item>
-              <ion-item>
-                <ion-textarea  name="comment" placeholder="Add Comments..."></ion-textarea>
+              
+              <ion-item color="Light"class="input">
+                <ion-label position="floating" name="comments">Comments...</ion-label>
+                <ion-input formControlName="comment" type="text"></ion-input>
               </ion-item>
-              <ion-button name="submit" class="buy_btn" (click)="submit()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
+              <ion-button name="submit" class="buy_btn"  (click)="submit()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
                 <strong>Submit</strong>
               </ion-button>
+            </form>
+
               
           </ion-card-content>
         </ion-card>

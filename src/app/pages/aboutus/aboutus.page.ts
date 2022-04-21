@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormBuilder, Validators } from '@angular/forms';
+import { CommentsService } from 'src/app/apis/comments.service';
+
 @Component({
   selector: 'app-aboutus',
   templateUrl: './aboutus.page.html',
@@ -7,7 +10,14 @@ import { Router } from '@angular/router';
 })
 export class AboutusPage implements OnInit {
 
-  constructor(private router: Router) { }
+
+registrationForm=this.formbuilder.group({
+  email: [''],
+  comment: ['']
+});
+
+
+  constructor(private router: Router, private formbuilder: FormBuilder, private service: CommentsService) { }
 
   ngOnInit() {
   }
@@ -24,4 +34,11 @@ aboutus(){
 profile(){
   this.router.navigate(['/profile']);
 }
+submit(){
+  console.log(this.registrationForm.value);
+  console.log(this.registrationForm.value.email);
+  // this.router.navigate(['/home-page']);
+  this.service.addNewComments(this.registrationForm.value);
+}
+
 }
