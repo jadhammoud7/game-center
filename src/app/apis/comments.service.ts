@@ -12,6 +12,6 @@ export class CommentsService {
 private url='http://localhost:8080/GameCenter/';
   constructor(private http: HttpClient) { }
   addNewComments(comment: Comments){
-    return this.http.post(this.url + 'comments.php', JSON.stringify(comment));
+    return this.http.post(this.url + 'comments.php', comment);
   }
 }

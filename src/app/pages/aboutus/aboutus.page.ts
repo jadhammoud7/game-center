@@ -23,4 +23,6 @@ export class AboutusPage implements OnInit {
   profile(){
     this.router.navigate(['/profile']);
   }
+  public submit(){
+  }
 }
