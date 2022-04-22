@@ -44,17 +44,17 @@
         <ion-card class="comments">
           <ion-card-content>
             <h1 style="color: black;">Give Us Your Thoughts!</h1>
-            <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+            <form #f="ngForm" (ngSubmit)="onSubmit(f)">
               <ion-item color="Light" class="input">
-                <ion-label position="floating" name="email">Email</ion-label>
-                <ion-input formControlName="email" type="email"></ion-input>
+                <ion-label position="floating" >Email</ion-label>
+                <ion-input ngModel name="email" type="Email"></ion-input>
               </ion-item>
               
               <ion-item color="Light"class="input">
-                <ion-label position="floating" name="comments">Comments...</ion-label>
-                <ion-input formControlName="comment" type="text"></ion-input>
+                <ion-label position="floating" >Comments...</ion-label>
+                <ion-input ngModel name="comment" type="text"></ion-input>
               </ion-item>
-              <ion-button name="submit" class="buy_btn"  (click)="submit()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
+              <ion-button name="submit"  type="submit" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
                 <strong>Submit</strong>
               </ion-button>
             </form>

@@ -11,7 +11,7 @@ import { AboutusPage } from './aboutus.page';
 @NgModule({
   imports: [
     CommonModule,
-    ReactiveFormsModule,
+    FormsModule,
     IonicModule,
     AboutusPageRoutingModule
   ],

@@ -15,43 +15,44 @@
           </ion-card-header>
         
           <ion-card-content>
-            <ion-item color="Light"class="input">
-              <ion-label position="floating" name="first_name">First Name</ion-label>
-              <ion-input type="string"></ion-input>
-            </ion-item>
-    
-            <ion-item color="Light"class="input">
-              <ion-label position="floating" name="last_name">Last Name</ion-label>
-              <ion-input type="string"></ion-input>
-            </ion-item>
-    
-            <ion-item color="Light"class="input">
-              <ion-label position="floating" name="email">Email</ion-label>
-              <ion-input type="email"></ion-input>
-            </ion-item>
-    
-            <ion-item color="Light"class="input">
-              <ion-label position="floating" name="address">Address</ion-label>
-              <ion-input type="string"></ion-input>
-            </ion-item>
-    
-            <ion-item color="Light"class="input">
-              <ion-label position="floating" name="phone_number">Phone Number</ion-label>
-              <ion-input type="string"></ion-input>
-            </ion-item>
-
-            <ion-item color="Light"class="input">
-              <ion-label position="floating" name="username"> Username</ion-label>
-              <ion-input type="string"></ion-input>
-            </ion-item>
-            <ion-item color="Light"class="input">
-              <ion-label position="floating" name="password">Password</ion-label>
-              <ion-input type="password"></ion-input>
-            </ion-item>
-            <br>
-            <ion-button class="register_button" href="home-page" style=" border-radius: 10px;">Register</ion-button>
+            <form  #f="ngForm" (ngSubmit)="onSubmit(f)">
+              <ion-item color="Light"class="input">
+                <ion-label position="floating" >First Name</ion-label>
+                <ion-input  ngModel name="first_name" type="string"></ion-input>
+              </ion-item>
+      
+              <ion-item color="Light"class="input">
+                <ion-label position="floating" >Last Name</ion-label>
+                <ion-input ngModel name="last_name" type="string"></ion-input>
+              </ion-item>
+      
+              <ion-item color="Light"class="input">
+                <ion-label position="floating" >Email</ion-label>
+                <ion-input ngModel name="email" type="email"></ion-input>
+              </ion-item>
+      
+              <ion-item color="Light"class="input">
+                <ion-label position="floating" >Address</ion-label>
+                <ion-input ngModel name="address" type="string"></ion-input>
+              </ion-item>
+      
+              <ion-item color="Light"class="input">
+                <ion-label position="floating">Phone Number</ion-label>
+                <ion-input  ngModel name="phone_number" type="tel"></ion-input>
+              </ion-item>
+  
+              <ion-item color="Light"class="input">
+                <ion-label position="floating" > Username</ion-label>
+                <ion-input ngModel name="username" type="string"></ion-input>
+              </ion-item>
+              <ion-item color="Light"class="input">
+                <ion-label position="floating">Password</ion-label>
+                <ion-input ngModel name="password" type="password"></ion-input>
+              </ion-item>
+              <br>
+              <ion-button class="register_button" style=" border-radius: 10px;">Register</ion-button>
+            </form>
           </ion-card-content>
-    
         </ion-card>
       </div>
     </ion-content>  
