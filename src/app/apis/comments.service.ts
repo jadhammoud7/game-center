@@ -2,7 +2,7 @@ import {Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 export interface Comments{
-  email: string;
+  username: string;
   comment: string;
 }
 @Injectable({
@@ -10,6 +10,7 @@ export interface Comments{
 })
 export class CommentsService {
 private url='http://localhost:8080/GameCenter/';
+
   constructor(private http: HttpClient) { }
   addNewComments(comment: Comments){
     console.log(JSON.stringify(comment));
