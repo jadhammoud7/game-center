@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
-
-// eslint-disable-next-line @typescript-eslint/naming-convention
-export interface users{
+export interface Users{
 username: string;
 password: string;
 }
@@ -16,8 +14,9 @@ export class LoginAPIService {
   constructor(private http: HttpClient) { }
 
 
-  logingin(){
-    return this.http.get<[users]>(this.url + 'login.php');
+  logingin(users: Users){
+    console.log(JSON.stringify(users));
+    return this.http.post(this.url + 'login.php', users);
   }
 }
 

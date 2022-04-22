@@ -14,18 +14,22 @@
         </ion-card-header>
       
         <ion-card-content >
-          <ion-item color="Light" class="input">
-            <ion-label position="floating" name="Username">Username</ion-label>
-            <ion-input type="string" ></ion-input>
-          </ion-item>
-          <ion-item class="input"color="Light">
-            <ion-label position="floating" type="password" name="password">Password</ion-label>
-            <ion-input type="password"></ion-input>
-          </ion-item>
+          <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+            <ion-item color="Light" class="input">
+              <ion-label position="floating" >Username</ion-label>
+              <ion-input ngModel name="username" type="string" ></ion-input>
+            </ion-item>
+            <ion-item class="input"color="Light">
+              <ion-label position="floating" type="password" >Password</ion-label>
+              <ion-input ngModel name="password" type="password"></ion-input>
+            </ion-item>
+            <h3 style="margin-top:10px">Dont have an account?<a href="register"><strong> Register now!</strong></a></h3>
+            
+            <br>
+            <ion-button type="submit" class="login_button" style=" border-radius: 10px;">Login</ion-button>
+          </form>
         </ion-card-content>
-        Dont have an account?<a href="register"><strong> Register now!</strong></a>
-        <br>
-        <ion-button href="" class="login_button" style=" border-radius: 10px;">Login</ion-button>
+
       </ion-card>
     </div>
   </ion-content>
