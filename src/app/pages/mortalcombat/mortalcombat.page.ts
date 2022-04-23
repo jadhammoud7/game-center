@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 @Component({
-  selector: 'app-mortal-combat',
-  templateUrl: './mortal-combat.page.html',
-  styleUrls: ['./mortal-combat.page.scss'],
+  selector: 'app-mortalcombat',
+  templateUrl: './mortalcombat.page.html',
+  styleUrls: ['./mortalcombat.page.scss'],
 })
 export class MortalCombatPage implements OnInit {
 vid='https://www.youtube.com/embed/mWytXS73aFI';

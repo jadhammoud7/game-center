@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { MortalCombatPage } from './mortal-combat.page';
+import { MortalCombatPage } from './mortalcombat.page';
 
 describe('MortalCombatPage', () => {
   let component: MortalCombatPage;

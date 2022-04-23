@@ -32,8 +32,8 @@ const routes: Routes = [
     loadChildren: () => import('./pages/shop/shop.module').then( m => m.ShopPageModule)
   },
   {
-    path: 'mortal-combat',
-    loadChildren: () => import('./pages/mortal-combat/mortal-combat.module').then( m => m.MortalCombatPageModule)
+    path: 'mortalcombat',
+    loadChildren: () => import('./pages/mortalcombat/mortalcombat.module').then( m => m.MortalCombatPageModule)
   },
   {
     path: 'batman',

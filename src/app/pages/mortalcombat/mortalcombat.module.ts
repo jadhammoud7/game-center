@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MortalCombatPageRoutingModule } from './mortal-combat-routing.module';
+import { MortalCombatPageRoutingModule } from './mortalcombat-routing.module';
 
-import { MortalCombatPage } from './mortal-combat.page';
+import { MortalCombatPage } from './mortalcombat.page';
 
 @NgModule({
   imports: [

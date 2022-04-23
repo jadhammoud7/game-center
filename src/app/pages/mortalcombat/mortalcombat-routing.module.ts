@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { MortalCombatPage } from './mortal-combat.page';
+import { MortalCombatPage } from './mortalcombat.page';
 
 const routes: Routes = [
   {

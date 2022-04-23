@@ -33,7 +33,7 @@ profile(){
    const user=form.value;
    console.log(user);
    console.log(this.username);
-   form.value.username=this.username;//putting usernamw inside form.value.username since it is empty(i removed the input
+   form.value.username=this.username;//putting username inside form.value.username since it is empty(i removed the input
    //from html so that i can use the logged in user)
    this.service.addNewComments(user).subscribe(response=>{
      this.router.navigate(['/shop']);
