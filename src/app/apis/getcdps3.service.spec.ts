@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { GetCdService } from './get-cd.service';
+import { Getcdps3Service } from './getcdps3.service';
 
-describe('GetCdService', () => {
-  let service: GetCdService;
+describe('Getcdps3Service', () => {
+  let service: Getcdps3Service;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(GetCdService);
+    service = TestBed.inject(Getcdps3Service);
   });
 
   it('should be created', () => {
