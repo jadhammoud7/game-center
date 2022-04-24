@@ -73,7 +73,6 @@
           <ion-card class="ps4">          
             <ion-card-content >
               <h3 style="color: black; width: 50%; margin-top: 20px;text-decoration: underline;"><strong> <i>PS4 cd's:</i></strong></h3>
-              
               <ion-card  *ngFor="let y of cdsps4" style="background-color: black; width: 90%;margin-top: 30px;">
                 <ion-card-header>
                   <ion-card-subtitle><img src="{{y.image}}.png" alt=""></ion-card-subtitle>
@@ -106,182 +105,7 @@
                     <strong>BUY</strong>
                   </ion-button>
                 </div>
-                
               </ion-card>
-
-              <!-- <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
-                <ion-card-header>
-                  <ion-card-subtitle><img src="hitman.png" alt=""></ion-card-subtitle>
-                  <ion-card-title style="color: white;"> <strong>Hitman</strong></ion-card-title>
-                </ion-card-header>
-                <div class="row">
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%; ">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="halfstar.png" alt="" style="width:100%">
-                  </div>
-                </div>
-                <div class="hi1">
-                  <h1 style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">60$</h1>
-                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">PS4</h1>
-                  <ion-button href="hitman" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                    <strong>info</strong>
-                  </ion-button>
-                  <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
-                    <strong>BUY</strong>
-                  </ion-button>
-                </div>
-              </ion-card>
-
-
-
-
-
-              <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
-                <ion-card-header>
-                  <ion-card-subtitle><img src="lastofus.png" alt=""></ion-card-subtitle>
-                  <ion-card-title style="color: white;"> <strong>Last Of Us</strong></ion-card-title>
-                </ion-card-header>
-                <div class="row">
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="halfstar.png" alt="" style="width:100%;">
-                  </div>
-                </div>
-                <div class="hi1">
-                  <h1 style="background-color:#3880ff; color: white;margin: 5px; border-radius: 10px;">60$</h1>
-                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">PS4</h1>
-                  <ion-button href="lastofus" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                    <strong>info</strong>
-                  </ion-button>
-                  <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
-                    <strong>BUY</strong>
-                  </ion-button>
-                </div>
-              </ion-card>
-
-
-              <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
-                <ion-card-header>
-                  <ion-card-subtitle><img src="modernwarfare.png" alt=""></ion-card-subtitle>
-                  <ion-card-title style="color: white;"> <strong>Call Of Cudy Modern Warfare</strong></ion-card-title>
-                </ion-card-header>
-                <div class="row">
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="halfstar.png" alt="" style="width:100%;">
-                  </div>
-                </div>
-                <div class="hi1">
-                  <h1 style="background-color:#3880ff; color: white;margin: 5px; border-radius: 10px;">60$</h1>
-                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">PS4</h1>
-                  <ion-button href="modernwarfare" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                    <strong>info</strong>
-                  </ion-button>
-                  <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
-                    <strong>BUY</strong>
-                  </ion-button>
-                </div>
-              </ion-card>
-              <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
-                <ion-card-header>
-                  <ion-card-subtitle><img src="mortalcombat.png" alt=""></ion-card-subtitle>
-                  <ion-card-title style="color: white;"> <strong>Mortal Combat</strong></ion-card-title>
-                </ion-card-header>
-                <div class="row">
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="halfstar.png" alt="" style="width:100%;">
-                  </div>
-                </div>
-                <div class="hi1">
-                  <h1 style="background-color:#3880ff; color: white;margin: 5px; border-radius: 10px;">60$</h1>
-                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">PS4</h1>
-                  <ion-button href="mortalcombat" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                    <strong>info</strong>
-                  </ion-button>
-                  <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
-                    <strong>BUY</strong>
-                  </ion-button>
-                </div>
-              </ion-card>
-
-              <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
-                <ion-card-header>
-                  <ion-card-subtitle><img src="residentevil.png" alt=""></ion-card-subtitle>
-                  <ion-card-title style="color: white;"> <strong>Resident Evil</strong></ion-card-title>
-                </ion-card-header>
-                <div class="row">
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="halfstar.png" alt="" style="width:100%;">
-                  </div>
-                </div>
-                <div class="hi1">
-                  <h1 style="background-color:#3880ff; color: white;margin: 5px; border-radius: 10px;">60$</h1>
-                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">PS4</h1>
-                  <ion-button href="residentevil" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                    <strong>info</strong>
-                  </ion-button>
-                  <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
-                    <strong>BUY</strong>
-                  </ion-button>
-                </div>
-              </ion-card>-->
             </ion-card-content>
           </ion-card>
 
@@ -305,10 +129,10 @@
           <ion-card class="ps5">          
             <ion-card-content >
               <h3 style="color: black; width: 50%; margin-top: 20px;text-decoration: underline;"><strong> <i>PS5 cd's:</i></strong></h3>
-              <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
+              <ion-card  *ngFor="let z of cdsps5" style="background-color: black; width: 90%;margin-top: 30px;">
                 <ion-card-header>
-                  <ion-card-subtitle><img src="clank.png" alt=""></ion-card-subtitle>
-                  <ion-card-title style="color: white;"> <strong>Clank</strong></ion-card-title>
+                  <ion-card-subtitle><img src="{{z.image}}.png" alt=""></ion-card-subtitle>
+                  <ion-card-title style="color: white;"> <strong>{{z.name}}</strong></ion-card-title>
                 </ion-card-header>
                 <div class="row">
                   <div class="column">
@@ -328,187 +152,12 @@
                   </div>
                 </div>
                 <div class="hi1">
-                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">60$</h1>
-                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">PS5</h1>
-                  <ion-button href="clank" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
+                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">{{z.price}}</h1>
+                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">{{z.type}}</h1>
+                  <ion-button href="{{z.image}}" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
                     <strong>info</strong>
                   </ion-button>
                   <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                    <strong>BUY</strong>
-                  </ion-button>
-                </div>
-                
-              </ion-card>
-
-              <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
-                <ion-card-header>
-                  <ion-card-subtitle><img src="creed.png" alt=""></ion-card-subtitle>
-                  <ion-card-title style="color: white;"> <strong>Assasin Creed</strong></ion-card-title>
-                </ion-card-header>
-                <div class="row">
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%; ">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="halfstar.png" alt="" style="width:100%">
-                  </div>
-                </div>
-                <div class="hi1">
-                  <h1 style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">60$</h1>
-                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">PS5</h1>
-                  <ion-button href="creed" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                    <strong>info</strong>
-                  </ion-button>
-                  <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
-                    <strong>BUY</strong>
-                  </ion-button>
-                </div>
-              </ion-card>
-
-
-
-
-
-              <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
-                <ion-card-header>
-                  <ion-card-subtitle><img src="coldwar.png" alt=""></ion-card-subtitle>
-                  <ion-card-title style="color: white;"> <strong>Cold War</strong></ion-card-title>
-                </ion-card-header>
-                <div class="row">
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="halfstar.png" alt="" style="width:100%;">
-                  </div>
-                </div>
-                <div class="hi1">
-                  <h1 style="background-color:#3880ff; color: white;margin: 5px; border-radius: 10px;">60$</h1>
-                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">PS5</h1>
-                  <ion-button href="coldwar" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                    <strong>info</strong>
-                  </ion-button>
-                  <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
-                    <strong>BUY</strong>
-                  </ion-button>
-                </div>
-              </ion-card>
-
-
-              <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
-                <ion-card-header>
-                  <ion-card-subtitle><img src="demon.png" alt=""></ion-card-subtitle>
-                  <ion-card-title style="color: white;"> <strong>Demon</strong></ion-card-title>
-                </ion-card-header>
-                <div class="row">
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="halfstar.png" alt="" style="width:100%;">
-                  </div>
-                </div>
-                <div class="hi1">
-                  <h1 style="background-color:#3880ff; color: white;margin: 5px; border-radius: 10px;">60$</h1>
-                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">PS5</h1>
-                  <ion-button href="demon" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                    <strong>info</strong>
-                  </ion-button>
-                  <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
-                    <strong>BUY</strong>
-                  </ion-button>
-                </div>
-              </ion-card>
-              <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
-                <ion-card-header>
-                  <ion-card-subtitle><img src="godofall.png" alt=""></ion-card-subtitle>
-                  <ion-card-title style="color: white;"> <strong>God of Fall</strong></ion-card-title>
-                </ion-card-header>
-                <div class="row">
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="halfstar.png" alt="" style="width:100%;">
-                  </div>
-                </div>
-                <div class="hi1">
-                  <h1 style="background-color:#3880ff; color: white;margin: 5px; border-radius: 10px;">60$</h1>
-                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">PS5</h1>
-                  <ion-button href="godoffall" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                    <strong>info</strong>
-                  </ion-button>
-                  <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
-                    <strong>BUY</strong>
-                  </ion-button>
-                </div>
-              </ion-card>
-
-              <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
-                <ion-card-header>
-                  <ion-card-subtitle><img src="pathless.png" alt=""></ion-card-subtitle>
-                  <ion-card-title style="color: white;"> <strong>Pathless</strong></ion-card-title>
-                </ion-card-header>
-                <div class="row">
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="halfstar.png" alt="" style="width:100%;">
-                  </div>
-                </div>
-                <div class="hi1">
-                  <h1 style="background-color:#3880ff; color: white;margin: 5px; border-radius: 10px;">60$</h1>
-                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">PS5</h1>
-                  <ion-button href="pathless" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                    <strong>info</strong>
-                  </ion-button>
-                  <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
                     <strong>BUY</strong>
                   </ion-button>
                 </div>
@@ -518,241 +167,86 @@
 
 
 
+          <!--ps5-->
+          <ion-card class="ps5">          
+            <ion-card-content >
+              <h3 style="color: black; width: 50%; margin-top: 20px;text-decoration: underline;"><strong> <i>PS5 cd's:</i></strong></h3>
+              <ion-card  *ngFor="let z of cdsps5" style="background-color: black; width: 90%;margin-top: 30px;">
+                <ion-card-header>
+                  <ion-card-subtitle><img src="{{z.image}}.png" alt=""></ion-card-subtitle>
+                  <ion-card-title style="color: white;"> <strong>{{z.name}}</strong></ion-card-title>
+                </ion-card-header>
+                <div class="row">
+                  <div class="column">
+                    <img src="star.png" alt="" style="width:100%;">
+                  </div>
+                  <div class="column">
+                    <img src="star.png" alt="" style="width:100%;">
+                  </div>
+                  <div class="column">
+                    <img src="star.png" alt="" style="width:100%;">
+                  </div>
+                  <div class="column">
+                    <img src="star.png" alt="" style="width:100%;">
+                  </div>
+                  <div class="column">
+                    <img src="halfstar.png" alt="" style="width:100%;">
+                  </div>
+                </div>
+                <div class="hi1">
+                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">{{z.price}}</h1>
+                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">{{z.type}}</h1>
+                  <ion-button href="{{z.image}}" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
+                    <strong>info</strong>
+                  </ion-button>
+                  <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
+                    <strong>BUY</strong>
+                  </ion-button>
+                </div>
+              </ion-card>
+            </ion-card-content>
+          </ion-card>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-                    <!--xbox-->
-                    <ion-card class="xbox">          
-                      <ion-card-content >
-                        <h3 style="color: black; width: 50%; margin-top: 20px;text-decoration: underline;"><strong> <i>xbox cd's:</i></strong></h3>
-                        <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
-                          <ion-card-header>
-                            <ion-card-subtitle><img src="crash.png" alt=""></ion-card-subtitle>
-                            <ion-card-title style="color: white;"> <strong>Crash</strong></ion-card-title>
-                          </ion-card-header>
-                          <div class="row">
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="halfstar.png" alt="" style="width:100%;">
-                            </div>
-                          </div>
-                          <div class="hi1">
-                            <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">60$</h1>
-                            <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">xbox</h1>
-                            <ion-button href="crash" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                              <strong>info</strong>
-                            </ion-button>
-                            <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                              <strong>BUY</strong>
-                            </ion-button>
-                          </div>
-                          
-                        </ion-card>
-          
-                        <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
-                          <ion-card-header>
-                            <ion-card-subtitle><img src="darksouls.png" alt=""></ion-card-subtitle>
-                            <ion-card-title style="color: white;"> <strong>Dark Souls</strong></ion-card-title>
-                          </ion-card-header>
-                          <div class="row">
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%; ">
-                            </div>
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="halfstar.png" alt="" style="width:100%">
-                            </div>
-                          </div>
-                          <div class="hi1">
-                            <h1 style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">60$</h1>
-                            <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">xbox</h1>
-                            <ion-button href="darksouls" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                              <strong>info</strong>
-                            </ion-button>
-                            <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
-                              <strong>BUY</strong>
-                            </ion-button>
-                          </div>
-                        </ion-card>
-          
-          
-          
-          
-          
-                        <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
-                          <ion-card-header>
-                            <ion-card-subtitle><img src="gearofwar.png" alt=""></ion-card-subtitle>
-                            <ion-card-title style="color: white;"> <strong>Gear of War</strong></ion-card-title>
-                          </ion-card-header>
-                          <div class="row">
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="halfstar.png" alt="" style="width:100%;">
-                            </div>
-                          </div>
-                          <div class="hi1">
-                            <h1 style="background-color:#3880ff; color: white;margin: 5px; border-radius: 10px;">60$</h1>
-                            <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">xbox</h1>
-                            <ion-button href="gearofwar" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                              <strong>info</strong>
-                            </ion-button>
-                            <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
-                              <strong>BUY</strong>
-                            </ion-button>
-                          </div>
-                        </ion-card>
-          
-          
-                        <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
-                          <ion-card-header>
-                            <ion-card-subtitle><img src="infinite.png" alt=""></ion-card-subtitle>
-                            <ion-card-title style="color: white;"> <strong>Infinite</strong></ion-card-title>
-                          </ion-card-header>
-                          <div class="row">
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="halfstar.png" alt="" style="width:100%;">
-                            </div>
-                          </div>
-                          <div class="hi1">
-                            <h1 style="background-color:#3880ff; color: white;margin: 5px; border-radius: 10px;">60$</h1>
-                            <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">xbox</h1>
-                            <ion-button href="infinite" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                              <strong>info</strong>
-                            </ion-button>
-                            <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
-                              <strong>BUY</strong>
-                            </ion-button>
-                          </div>
-                        </ion-card>
-                        <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
-                          <ion-card-header>
-                            <ion-card-subtitle><img src="legos.png" alt=""></ion-card-subtitle>
-                            <ion-card-title style="color: white;"> <strong>Marvel legos</strong></ion-card-title>
-                          </ion-card-header>
-                          <div class="row">
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="halfstar.png" alt="" style="width:100%;">
-                            </div>
-                          </div>
-                          <div class="hi1">
-                            <h1 style="background-color:#3880ff; color: white;margin: 5px; border-radius: 10px;">60$</h1>
-                            <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">xbox</h1>
-                            <ion-button href="legos" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                              <strong>info</strong>
-                            </ion-button>
-                            <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
-                              <strong>BUY</strong>
-                            </ion-button>
-                          </div>
-                        </ion-card>
-          
-                        <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
-                          <ion-card-header>
-                            <ion-card-subtitle><img src="sonic.png" alt=""></ion-card-subtitle>
-                            <ion-card-title style="color: white;"> <strong>Sonic</strong></ion-card-title>
-                          </ion-card-header>
-                          <div class="row">
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="star.png" alt="" style="width:100%;">
-                            </div>
-                            <div class="column">
-                              <img src="halfstar.png" alt="" style="width:100%;">
-                            </div>
-                          </div>
-                          <div class="hi1">
-                            <h1 style="background-color:#3880ff; color: white;margin: 5px; border-radius: 10px;">60$</h1>
-                            <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">xbox</h1>
-                            <ion-button href="sonic" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                              <strong>info</strong>
-                            </ion-button>
-                            <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white;margin: 5px; border-radius: 10px;">
-                              <strong>BUY</strong>
-                            </ion-button>
-                          </div>
-                        </ion-card>
-                      </ion-card-content>
-                    </ion-card>
-
-
-
-
-
-
-
+          <!--xbox-->
+          <ion-card class="xbox">          
+            <ion-card-content >
+              <h3 style="color: black; width: 50%; margin-top: 20px;text-decoration: underline;"><strong> <i>Xbox cd's:</i></strong></h3>
+              <ion-card  *ngFor="let w of cdsxbox" style="background-color: black; width: 90%;margin-top: 30px;">
+                <ion-card-header>
+                  <ion-card-subtitle><img src="{{w.image}}.png" alt=""></ion-card-subtitle>
+                  <ion-card-title style="color: white;"> <strong>{{w.name}}</strong></ion-card-title>
+                </ion-card-header>
+                <div class="row">
+                  <div class="column">
+                    <img src="star.png" alt="" style="width:100%;">
+                  </div>
+                  <div class="column">
+                    <img src="star.png" alt="" style="width:100%;">
+                  </div>
+                  <div class="column">
+                    <img src="star.png" alt="" style="width:100%;">
+                  </div>
+                  <div class="column">
+                    <img src="star.png" alt="" style="width:100%;">
+                  </div>
+                  <div class="column">
+                    <img src="halfstar.png" alt="" style="width:100%;">
+                  </div>
+                </div>
+                <div class="hi1">
+                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">{{w.price}}</h1>
+                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">{{w.type}}</h1>
+                  <ion-button href="{{w.image}}" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
+                    <strong>info</strong>
+                  </ion-button>
+                  <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
+                    <strong>BUY</strong>
+                  </ion-button>
+                </div>
+              </ion-card>
+            </ion-card-content>
+          </ion-card>
 
                     <!--cotrollers-->
                     <ion-card class="controllers">          

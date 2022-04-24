@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {Cdps3,Getcdps3Service } from 'src/app/apis/getcdps3.service';
 import {Cdps4,Getcdps4Service } from 'src/app/apis/getcdps4.service';
+import {Cdps5 ,Getcdps5Service } from 'src/app/apis/getcdps5.service';
+import {Cdxbox ,GetcdxboxService } from 'src/app/apis/getcdxbox.service';
 @Component({
   selector: 'app-shop',
   templateUrl: './shop.page.html',
@@ -10,8 +12,12 @@ import {Cdps4,Getcdps4Service } from 'src/app/apis/getcdps4.service';
 export class ShopPage implements OnInit {
 cdsps3: Cdps3[];
 cdsps4: Cdps4[];
+cdsps5: Cdps5[];
+cdsxbox: Cdxbox[];
 
-  constructor(private router: Router, private serviceps3: Getcdps3Service,private serviceps4: Getcdps4Service) { }
+
+  // eslint-disable-next-line max-len
+  constructor(private router: Router, private serviceps3: Getcdps3Service,private serviceps4: Getcdps4Service, private serviceps5: Getcdps5Service, private servicexbox: GetcdxboxService) { }
 
   ngOnInit() {
     //ps3
@@ -20,10 +26,19 @@ cdsps4: Cdps4[];
       console.log(this.cdsps3);
     });
     //ps4
-    console.log('hello');
     this.serviceps4.getCdps4().subscribe(response=>{
       this.cdsps4=response;
       console.log(this.cdsps4);
+    });
+    //ps5
+    this.serviceps5.getCdps5().subscribe(response=>{
+      this.cdsps5=response;
+      console.log(this.cdsps5);
+    });
+    //xbox
+    this.servicexbox.getCdxbox().subscribe(response=>{
+      this.cdsxbox=response;
+      console.log(this.cdsxbox);
     });
 
   }
