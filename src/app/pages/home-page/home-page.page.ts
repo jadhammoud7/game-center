@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import {Cd,GetRamdonToPageService } from 'src/app/apis/get-ramdon-to-page.service';
 
 @Component({
   selector: 'app-home-page',
@@ -7,10 +8,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./home-page.page.scss'],
 })
 export class HomePagePage implements OnInit {
-
-  constructor(private router: Router) { }
+cd: Cd[];
+  constructor(private router: Router,private service: GetRamdonToPageService) { }
 
   ngOnInit() {
+    this.service.getRandom().subscribe(response=>{
+      this.cd=response;
+      console.log(this.cd);
+    });
   }
 buy(){
   alert('This product is purchased');

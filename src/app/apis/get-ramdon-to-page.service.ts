@@ -12,7 +12,7 @@ export interface Cd{
 export class GetRamdonToPageService {
   private url='http://localhost:8080/GameCenter/';
   constructor(private http: HttpClient) { }
-  getcdps3(){
-    return this.http.get<[Cd]>(this.url + '.php');
+  getRandom(){
+    return this.http.get<[Cd]>(this.url + 'getCdForHome.php');
   }
 }
