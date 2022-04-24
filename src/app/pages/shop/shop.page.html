@@ -165,49 +165,6 @@
             </ion-card-content>
           </ion-card>
 
-
-
-          <!--ps5-->
-          <ion-card class="ps5">          
-            <ion-card-content >
-              <h3 style="color: black; width: 50%; margin-top: 20px;text-decoration: underline;"><strong> <i>PS5 cd's:</i></strong></h3>
-              <ion-card  *ngFor="let z of cdsps5" style="background-color: black; width: 90%;margin-top: 30px;">
-                <ion-card-header>
-                  <ion-card-subtitle><img src="{{z.image}}.png" alt=""></ion-card-subtitle>
-                  <ion-card-title style="color: white;"> <strong>{{z.name}}</strong></ion-card-title>
-                </ion-card-header>
-                <div class="row">
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="star.png" alt="" style="width:100%;">
-                  </div>
-                  <div class="column">
-                    <img src="halfstar.png" alt="" style="width:100%;">
-                  </div>
-                </div>
-                <div class="hi1">
-                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">{{z.price}}</h1>
-                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">{{z.type}}</h1>
-                  <ion-button href="{{z.image}}" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                    <strong>info</strong>
-                  </ion-button>
-                  <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
-                    <strong>BUY</strong>
-                  </ion-button>
-                </div>
-              </ion-card>
-            </ion-card-content>
-          </ion-card>
-
-
           <!--xbox-->
           <ion-card class="xbox">          
             <ion-card-content >
@@ -396,7 +353,7 @@
 
 
                     <!--charges-->
-                    <ion-card class="xbox">          
+                    <ion-card class="charges">          
                       <ion-card-content >
                         <h3 style="color: black; width: 50%; margin-top: 20px;text-decoration: underline;"><strong> <i>Charges:</i></strong></h3>
                         <ion-card style="background-color: black; width: 90%;margin-top: 30px;">

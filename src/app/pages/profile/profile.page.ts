@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import {Profile,ChangeProfileService } from 'src/app/apis/change-profile.service';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'app-profile',
@@ -11,7 +12,7 @@ import {Profile,ChangeProfileService } from 'src/app/apis/change-profile.service
 export class ProfilePage implements OnInit {
   username: string = localStorage.getItem('username');
   p: Profile[];
-  constructor(private router: Router,private service: ChangeProfileService) { }
+  constructor(private router: Router,private service: ChangeProfileService, private storage: Storage) { }
   ngOnInit() {
 
   }
@@ -36,6 +37,12 @@ public onSubmit(form: NgForm){
     console.log(profile);
   });
 }
+
+logout(){
+  localStorage.setItem('username',null);
+  this.router.navigate(['/login']);
+}
+
 }
 
 
