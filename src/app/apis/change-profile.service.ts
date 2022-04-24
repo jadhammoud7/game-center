@@ -22,6 +22,7 @@ export class ChangeProfileService {
   private url='http://localhost:8080/GameCenter/';
   constructor(private http: HttpClient) { }
   getProfile(profile: Profile){
+    console.log('this is profile : '+JSON.stringify(profile));
     return this.http.post(this.url + 'getprofile.php',profile);
   }
 }

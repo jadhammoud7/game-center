@@ -13,6 +13,7 @@ export class ProfilePage implements OnInit {
   p: Profile[];
   constructor(private router: Router,private service: ChangeProfileService) { }
   ngOnInit() {
+
   }
 
   home(){
