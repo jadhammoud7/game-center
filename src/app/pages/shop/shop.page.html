@@ -21,15 +21,10 @@
           <ion-card class="ps3">          
             <ion-card-content >
               <h3 style="color: black; width: 50%; margin-top: 20px; text-decoration: underline;"><strong> <i>PS3 cd's:</i></strong></h3>
-              <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
-
-
-
-                <!--add here -->
+              <ion-card *ngFor="let x of cdsps3" style="background-color: black; width: 90%;margin-top: 30px;">
                 <ion-card-header>
-                  <!--add here the ng for-->
-                  <ion-card-subtitle><img src="batman.png" alt=""></ion-card-subtitle>
-                  <ion-card-title style="color: white;"> <strong>BatMan Arkham Origins</strong></ion-card-title>
+                  <ion-card-subtitle ><img src="{{x.image}}.png" alt=""></ion-card-subtitle>
+                  <ion-card-title style="color: white;"> <strong>{{x.name}}</strong></ion-card-title>
                 </ion-card-header>
                 <div class="row">
                   <div class="column">
@@ -49,10 +44,10 @@
                   </div>
                 </div>
                 <div class="hi1">
-                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">60$</h1>
-                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">PS3</h1>
+                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">{{x.price}}</h1>
+                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">{{x.type}}</h1>
 
-                  <ion-button href="batman" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
+                  <ion-button  href="{{x.image}}" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
                     <strong>info</strong>
                   </ion-button>
                   <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
@@ -62,7 +57,7 @@
                 
               </ion-card>
 
-              <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
+              <!-- <ion-card style="background-color: black; width: 90%;margin-top: 30px;">
                 <ion-card-header>
                   <ion-card-subtitle><img src="blackops.png" alt=""></ion-card-subtitle>
                   <ion-card-title style="color: white;"> <strong>Call of Cudy Black ops</strong></ion-card-title>
@@ -234,7 +229,7 @@
                     <strong>BUY</strong>
                   </ion-button>
                 </div>
-              </ion-card>
+              </ion-card> -->
             </ion-card-content>
           </ion-card>
 

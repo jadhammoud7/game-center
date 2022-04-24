@@ -13,6 +13,7 @@ cdsps3: Cdps3[];
   ngOnInit() {
     this.service.getcdps3().subscribe(response=>{
       this.cdsps3=response;
+      console.log(this.cdsps3);
     });
   }
   buy(){
@@ -30,5 +31,7 @@ cdsps3: Cdps3[];
   profile(){
     this.router.navigate(['/profile']);
   }
-
+gotoinfo(s: string){
+  this.router.navigate(['/'+s]);
+}
 }
