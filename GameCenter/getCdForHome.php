@@ -5,15 +5,15 @@ header('Access-Control-Allow-Headers: Content-Type');
 
 include("db_info.php");
 
-$query =$mysqli->prepare("SELECT * FROM cds WHERE type='PS4'");
+$query =$mysqli->prepare("SELECT * FROM cds LIMIT 3;");
 $query->execute();
 
 $array = $query->get_result();
 
 $response = [];
 
-while($cdps4 = $array->fetch_assoc()){
-    $response[] = $cdps4;
+while($random = $array->fetch_assoc()){
+    $response[] = $random;
 }
 
 $json_response = json_encode($response);
