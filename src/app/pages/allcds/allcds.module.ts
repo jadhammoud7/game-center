@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { BatmanPageRoutingModule } from './batman-routing.module';
+import { AllcdsPageRoutingModule } from './allcds-routing.module';
 
-import { BatmanPage } from './batman.page';
+import { AllcdsPage } from './allcds.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BatmanPageRoutingModule
+    AllcdsPageRoutingModule
   ],
-  declarations: [BatmanPage]
+  declarations: [AllcdsPage]
 })
-export class BatmanPageModule {}
+export class AllcdsPageModule {}

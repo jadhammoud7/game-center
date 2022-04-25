@@ -36,8 +36,8 @@ const routes: Routes = [
     loadChildren: () => import('./pages/mortalcombat/mortalcombat.module').then( m => m.MortalCombatPageModule)
   },
   {
-    path: 'batman',
-    loadChildren: () => import('./pages/batman/batman.module').then( m => m.BatmanPageModule)
+    path: 'allcds',
+    loadChildren: () => import('./pages/allcds/allcds.module').then( m => m.AllcdsPageModule)
   },
   {
     path: 'blackops',
@@ -130,6 +130,10 @@ const routes: Routes = [
   {
     path: 'aboutus',
     loadChildren: () => import('./pages/aboutus/aboutus.module').then( m => m.AboutusPageModule)
+  },
+  {
+    path: 'cdinfo',
+    loadChildren: () => import('./pages/cdinfo/cdinfo.module').then( m => m.CdinfoPageModule)
   },
 
 
