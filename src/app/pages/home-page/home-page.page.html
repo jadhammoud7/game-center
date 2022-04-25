@@ -36,37 +36,38 @@
             </ion-card-content>
           </ion-card>
 
-          <ion-card class="objects">
-            <ion-card-content>
+          <ion-card>
+            <ion-card-content style="background-color: white; opacity: 65%;">
               <h1 class="card_title"><strong>Some of our CD's</strong></h1>
-              <ion-card   *ngFor="let x of cd" style="background-color: black; width: 90%">
+              <ion-card  *ngFor="let y of cd" style="background-color: black; width: 90%;margin-top: 30px;">
                 <ion-card-header>
-                  <ion-card-subtitle><img src="{{x.image}}.png" alt=""/></ion-card-subtitle>
-                  <ion-card-title style="color: white"><strong>{{x.name}}</strong></ion-card-title>
+                  <ion-card-subtitle><img src="{{y.image}}.png" alt=""></ion-card-subtitle>
+                  <ion-card-title style="color: white; font-size: 20px;"> <strong>{{y.name}}</strong></ion-card-title>
                 </ion-card-header>
                 <div class="row">
                   <div class="column">
-                    <img src="star.png" alt="" style="width: 100%" />
+                    <img src="star.png" alt="" style="width:100%;">
                   </div>
                   <div class="column">
-                    <img src="star.png" alt="" style="width: 100%" />
+                    <img src="star.png" alt="" style="width:100%;">
                   </div>
                   <div class="column">
-                    <img src="star.png" alt="" style="width: 100%" />
+                    <img src="star.png" alt="" style="width:100%;">
                   </div>
                   <div class="column">
-                    <img src="star.png" alt="" style="width: 100%" />
+                    <img src="star.png" alt="" style="width:100%;">
                   </div>
                   <div class="column">
-                    <img src="halfstar.png" alt="" style="width: 100%" />
+                    <img src="halfstar.png" alt="" style="width:100%;">
                   </div>
                 </div>
                 <div class="hi1">
-                  <h1
-                    style="background-color: #3880ff;color: white;margin: 5px;border-radius: 10px;">{{x.price}}</h1>
-                  <h1 style="background-color: #3880ff;color: white;margin: 5px;border-radius: 10px;">{{x.type}}</h1>
-                  <ion-button href="{{x.image}}" class="buy_btn"expand="block"fill="clear"shape="round"style="background-color: #3880ff;color: white;margin: 5px;border-radius: 10px;"><strong>info</strong></ion-button>
-                  <ion-button class="buy_btn"(click)="buy()"expand="block"fill="clear" shape="round" style="background-color: #3880ff;color: white;margin: 5px;border-radius: 10px;">
+                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">{{y.price}}</h1>
+                  <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">{{y.type}}</h1>
+                  <ion-button href="{{y.image}}" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
+                    <strong>info</strong>
+                  </ion-button>
+                  <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
                     <strong>BUY</strong>
                   </ion-button>
                 </div>
@@ -81,10 +82,10 @@
           <ion-card class="offers">
             <ion-card-content>
               <h1 class="card_title"><strong>Some of our offers</strong></h1>
-              <ion-card   *ngFor="let y of cd" style="background-color: black; width: 90%">
+              <ion-card   *ngFor="let y of cd" style="background-color: black; width: 90%;margin-top: 30px">
                 <ion-card-header>
                   <ion-card-subtitle><img src="{{y.image}}.png" alt=""/></ion-card-subtitle>
-                  <ion-card-title style="color: white"><strong>{{y.name}}</strong></ion-card-title>
+                  <ion-card-title style="color: white; font-size: 20px;"><strong>{{y.name}}</strong></ion-card-title>
                 </ion-card-header>
                 <div class="row">
                   <div class="column">
