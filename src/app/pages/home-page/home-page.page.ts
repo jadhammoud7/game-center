@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {Cd,GetRamdonToPageService } from 'src/app/apis/get-ramdon-to-page.service';
 import { AlertController } from '@ionic/angular';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'app-home-page',
@@ -10,7 +11,7 @@ import { AlertController } from '@ionic/angular';
 })
 export class HomePagePage implements OnInit {
 cd: Cd[];
-  constructor(private router: Router,private service: GetRamdonToPageService, private alert: AlertController) { }
+  constructor(private router: Router,private service: GetRamdonToPageService, private alert: AlertController, private storage: Storage) { }
 
   ngOnInit() {
     this.service.getRandom().subscribe(response=>{
@@ -41,5 +42,10 @@ aboutus(){
 }
 profile(){
   this.router.navigate(['/profile']);
+}
+gotocd(s1: string){
+  localStorage.setItem('cd_name',s1);
+  this.router.navigate(['/allcds']);
+  //console.log(s1);
 }
 }

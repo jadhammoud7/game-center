@@ -1,6 +1,6 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>hello</ion-title>
+  <ion-toolbar *ngFor="let x of cd">
+    <ion-title>{{x.name}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -9,25 +9,25 @@
     <div class="div" >
       <ion-infinite-scroll>
         <ion-infinite-scroll-content>
-          <ion-card class="card" *ngFor="let x of single">
+          <ion-card class="card" *ngFor="let x of cd">
             <ion-card-content class="welcome" >
               <h1><strong>{{x.name}}</strong></h1>
             </ion-card-content>
           </ion-card>
           <ion-card class="trailer">
-            <ion-card-content *ngFor="let x of single">
+            <ion-card-content >
               <h1 style="color: black;"> <strong>Trailer</strong></h1>
-              <iframe width="300" height="320" [(ngModel)]="x.youtube" [src]="sanitize(x.youtube)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+              <iframe width="300" height="320" *ngFor="let x of cd" [(ngModel)]="x.youtube" [src]="sanitize(x.youtube)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </ion-card-content>
           </ion-card>
 
-        <ion-card class="cd_info" *ngFor="let x of single">
-          <ion-card-content>
+        <ion-card class="cd_info" *ngFor="let x of cd">
+          <ion-card-content >
             <h1> Game's Info</h1>
             <ul>
               <li>Name: {{x.name}}</li>
-              <li>Price: {{x.price}}</li>
+              <li>Price:{{x.price}}</li>
               <li>Released: 1/3/2016</li>
               <li>2 PLayers</li>
               <li>Online Play optional</li>

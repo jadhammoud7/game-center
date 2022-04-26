@@ -4,7 +4,7 @@ import {Cdps3,Getcdps3Service } from 'src/app/apis/getcdps3.service';
 import {Cdps4,Getcdps4Service } from 'src/app/apis/getcdps4.service';
 import {Cdps5 ,Getcdps5Service } from 'src/app/apis/getcdps5.service';
 import {Cdxbox ,GetcdxboxService } from 'src/app/apis/getcdxbox.service';
-import { AlertController, NavParams } from '@ionic/angular';
+import { AlertController } from '@ionic/angular';
 import { Storage } from '@ionic/storage';
 
 
@@ -19,7 +19,7 @@ cdsps3: Cdps3[];
 cdsps4: Cdps4[];
 cdsps5: Cdps5[];
 cdsxbox: Cdxbox[];
-s: string;
+
   // eslint-disable-next-line max-len
   constructor(private router: Router, private serviceps3: Getcdps3Service,private serviceps4:
     Getcdps4Service, private serviceps5: Getcdps5Service, private servicexbox: GetcdxboxService, private alert:
@@ -77,7 +77,7 @@ gotoinfo(s: string){
 }
 gotocd(s1: string){
   localStorage.setItem('cd_name',s1);
-  this.router.navigate(['/batman']);
+  this.router.navigate(['/allcds']);
   //console.log(s1);
 }
 }

@@ -17,7 +17,7 @@ vid: any;
   ngOnInit() {
     this.service.singlecd(this.s).subscribe(response=>{
       this.cd=response;
-      console.log(this.cd);
+      console.log(response);
     });
   }
 sanitize(vid){

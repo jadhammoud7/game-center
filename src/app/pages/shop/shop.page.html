@@ -98,7 +98,7 @@
                 <div class="hi1">
                   <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">{{y.price}}</h1>
                   <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">{{y.type}}</h1>
-                  <ion-button href="{{y.image}}" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
+                  <ion-button [(ngModel)]="y.name" (click)="gotocd(y.name)"class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
                     <strong>info</strong>
                   </ion-button>
                   <ion-button class="buy_btn" (click)="buy()" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
@@ -149,7 +149,7 @@
                 <div class="hi1">
                   <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">{{z.price}}</h1>
                   <h1 style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">{{z.type}}</h1>
-                  <ion-button href="{{z.image}}" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
+                  <ion-button [(ngModel)]="z.name" (click)="gotocd(z.name)" class="buy_btn" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
                     <strong>info</strong>
                   </ion-button>
                   <ion-button class="buy_btn" (click)="buy()" (click)="gotocd(z.name)" expand="block" fill="clear" shape="round" style="background-color: #3880ff; color: white; margin: 5px; border-radius: 10px;">
