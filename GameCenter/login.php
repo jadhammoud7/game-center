@@ -22,9 +22,9 @@ $array = $query->get_result();
 
 
 $userss = $array->fetch_assoc();
-if(empty($userss)){//username not found se3eta byaamel encode lal $username la2ano manna empty fa akid btetla3=$username elle hatayneha bel frontend
+if(empty($userss)){//username not found 
 echo null;
 }else{
-    $json_response = json_encode($username);
+    $json_response = json_encode($username);//se3eta byaamel encode lal $username la2ano manna empty fa akid btetla3=$username elle hatayneha bel frontend
     echo $json_response;
 }
