@@ -26,6 +26,8 @@ cdsxbox: Cdxbox[];
      AlertController, private storage: Storage) { }
 
   ngOnInit() {
+    localStorage.setItem('cd_name','');
+
     //ps3
     this.serviceps3.getcdps3().subscribe(response=>{
       this.cdsps3=response;
@@ -77,6 +79,7 @@ gotoinfo(s: string){
 }
 gotocd(s1: string){
   localStorage.setItem('cd_name',s1);
+  console.log(s1);
   this.router.navigate(['/allcds']);
   //console.log(s1);
 }

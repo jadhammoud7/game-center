@@ -14,6 +14,7 @@ cd: Cd[];
   constructor(private router: Router,private service: GetRamdonToPageService, private alert: AlertController, private storage: Storage) { }
 
   ngOnInit() {
+    localStorage.setItem('cd_name','');
     this.service.getRandom().subscribe(response=>{
       this.cd=response;
       console.log(this.cd);
