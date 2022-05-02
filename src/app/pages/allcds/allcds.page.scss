@@ -35,7 +35,7 @@
 
     margin-top: 50px;
 
-    height: 1900px;
+    height: 900px;
     background-color: white;
     opacity: 65%;
 }
@@ -63,6 +63,10 @@
     bottom: 0;
     position: sticky;
     
+}
+
+.name,.date,.info,.genre,.type{
+    display: inline;
 }
 
 

@@ -7,6 +7,10 @@ export interface Getsinglecd{
   price: string;
   type: string;
   youtube: string;
+  genre: string;
+  // eslint-disable-next-line @typescript-eslint/naming-convention
+  release_date: string;
+  info: string;
 }
 
 @Injectable({

@@ -11,6 +11,7 @@
         <ion-infinite-scroll-content>
           <ion-card class="card" *ngFor="let x of cd">
             <ion-card-content class="welcome" >
+
               <h1><strong>{{x.name}}</strong></h1>
             </ion-card-content>
           </ion-card>
@@ -24,20 +25,34 @@
 
         <ion-card class="cd_info" *ngFor="let x of cd">
           <ion-card-content >
-            <h1> Game's Info</h1>
-            <ul>
-              <li>Name: {{x.name}}</li>
-              <li>Price:{{x.price}}</li>
-              <li>Released: 1/3/2016</li>
-              <li>2 PLayers</li>
-              <li>Online Play optional</li>
-              <li>DUALSHOCK 4 vibration</li>
-              <li>Mortal Kombat is an American media franchise centered on a series of video games originally developed by Midway Games in 1992. The development of the first game was originally based on an idea that Ed Boon and John Tobias had of making a video game starring Jean-Claude Van Damme, but when that idea fell through, a science fantasy-themed fighting game was created instead. Still, the developers paid homage to him with Johnny Cage, a fictional film star whose personal style resembles Van Damme's. The original Mortal Kombat was the first fighting game to introduce a secret fighter, reached if the player fulfilled a set of requirements.
+            <h1 style="color: black;"> Game's Info</h1>
+            <br> <br> <br>
+            <div class="name">
+              <h2 style="color: black; ;"><strong>Name? </strong></h2>
+              <h3><strong>{{x.name}}</strong></h3>
+            </div>
+            <br> <br>
+            <div class="platform">
+              <h2 style="color: black; ;"><strong>Platform? </strong></h2>
+              <h3><strong>{{x.type}}</strong></h3>
+            </div>
+            <br> <br>
+            <div class="date">
+              <h2 style="color: black; ;"><strong>Release Date? </strong></h2>
+              <h3><strong>{{x.release_date}}</strong></h3>
+            </div>
+            <br> <br>
+            <div class="genre">
+              <h2 style="color: black; ;"><strong>Genre? </strong></h2>
+              <h3><strong>{{x.genre}}</strong></h3>
+            </div>
+            <br> <br>
+            <div class="info">
+              <h2 style="color: black; ;"><strong>Game and Legal Info? </strong></h2>
+              <h3><strong>{{x.info}}</strong></h3>
+            </div>
 
-                The original game has spawned many sequels and spin-offs consisting of several action-adventure games, as well as a comic book series and a card game. Movie producer Larry Kasanoff licensed the rights to the game in the early 1990s and produced the first movie of the franchise. Kasanoff also produced the second movie, animated TV series, live-action TV series movies, the first one million platinum-selling album, and a live-action tour. Mortal Kombat has become the best-selling fighting game franchise worldwide and one of the highest-grossing media franchises of all time.
-                
-                The series has a reputation for high levels of graphic violence, including, most notably, its fatalities, which are finishing moves that kill the defeated opponents instead of knocking them out. Controversies surrounding Mortal Kombat, in part, led to the creation of the Entertainment Software Rating Board video game rating system. Early games in this series were also noted for their realistic digitized sprites and an extensive use of palette swapping to create new characters. Following Midway's bankruptcy, the MK development team was acquired by Warner Bros. Entertainment and reestablished as NetherRealm Studios.</li>
-            </ul>
+
           </ion-card-content>
         </ion-card>
           <!--menu-->
