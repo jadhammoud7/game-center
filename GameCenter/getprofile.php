@@ -23,14 +23,4 @@ $query =$mysqli->prepare("UPDATE users SET first_name=?,last_name=?, address=?,e
 $query->bind_param("ssssiss",$first_name,$last_name,$address,$email,$phone_number,$password,$username);
 $query->execute();
 
-// $array = $query->get_result();
-
-// $response = [];
-
-// $profile = $array->fetch_assoc();
-// $response[] = $profile;
-
-
-// $json_response = json_encode($response);
-// echo $json_response;
 ?>

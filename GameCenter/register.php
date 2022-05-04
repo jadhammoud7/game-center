@@ -24,7 +24,7 @@ $password=hash("sha256",$data->password);
     $response["phone_number"] = $phone_number;
     $response["username"] = $username;
     $response["password"] = $password;
- 
+
 
     $query = $mysqli->prepare("INSERT INTO users (first_name,last_name,address,email,phone_number,username,password) 
     VALUES (?,?,?,?,?,?,?)");
@@ -33,7 +33,6 @@ $password=hash("sha256",$data->password);
     $query->execute();
     $json_response = json_encode($username);
     echo $json_response;
-// }else{
-//     echo "error";
+
 
 ?>

@@ -12,17 +12,6 @@ $username=$data->username;
 $comment=$data->comment;
 
 
-// if(isset($_POST["email"]) && $_POST["email"] != ""){
-// 	$email = $_POST["email"];
-// }else{
-// 	die(" ALERT email");
-// }
-// if(isset($_POST["comment"]) && $_POST["comment"] != ""){
-// 	$comment = $_POST["comment"];
-// }else{
-// 	die(" ALERT comment");
-// }
-
 
 
     $response = [];
@@ -39,9 +28,6 @@ $comment=$data->comment;
     $query->execute();
     $json_response = json_encode($response);
     echo $json_response;
-// }else{
-//     echo "error";
 
-// }
 
 ?>
