@@ -56,9 +56,7 @@
 .input{
     color: black;
 }
-// .image1{
-//     background-image: url(icon1.png);
-// }
+
 .tabs{
     bottom: 0;
     position: sticky;
@@ -67,6 +65,16 @@
 
 .name,.date,.info,.genre,.type{
     display: inline;
+}
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../assets/wallpaper3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
 }
 
 
