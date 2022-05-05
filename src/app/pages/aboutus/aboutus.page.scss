@@ -43,15 +43,7 @@
 .hi h1{
     font-size: 15px;
 }
-.image1{
-    background-image: url(person.png);
-}
-.image2{
-    background-image: url(icon2.png);
-}
-.image3{
-    background-image: url(delivery.png);
-}
+
 .input{
     color: black;
 }
@@ -63,7 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(wallpaper3.jpg);
+    background-image: url(../../../assets/wallpaper3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
