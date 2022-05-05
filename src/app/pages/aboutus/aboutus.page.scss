@@ -58,5 +58,14 @@
 .tabs{
     bottom: 0;
     position: sticky;
+}
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(wallpaper3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     
 }

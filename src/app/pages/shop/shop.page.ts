@@ -74,9 +74,7 @@ cdsxbox: Cdxbox[];
   profile(){
     this.router.navigate(['/profile']);
   }
-gotoinfo(s: string){
-  this.router.navigate(['/'+s]);
-}
+
 gotocd(s1: string){
   localStorage.setItem('cd_name',s1);
   console.log(s1);

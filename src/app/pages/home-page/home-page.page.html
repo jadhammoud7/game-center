@@ -20,17 +20,17 @@
                 <strong>what do we have in our center?</strong>
               </h1>
               <ion-avatar class="hi">
-                <img src="icon1.png" />
+                <img src="../../../assets/icon1.png" />
               </ion-avatar>
               <h1>PS3, PS4, PS5 and XBOX</h1>
 
               <ion-avatar class="hi">
-                <img src="icon2.png" />
+                <img src="../../../assets/icon2.png" />
               </ion-avatar>
               <h1>PS3, PS4, PS5, XBOX CD'S</h1>
 
               <ion-avatar class="hi">
-                <img src="cables.png" />
+                <img src="../../../assets/cables.png" />
               </ion-avatar>
               <h1>PS3, PS4, PS5 and XBOX</h1>
             </ion-card-content>
@@ -41,7 +41,7 @@
               <h1 class="card_title"><strong>Some of our CD's</strong></h1>
               <ion-card  *ngFor="let y of cd" style="background-color: black; width: 90%;margin-top: 30px;">
                 <ion-card-header>
-                  <ion-card-subtitle><img src="{{y.image}}.png" alt=""></ion-card-subtitle>
+                  <ion-card-subtitle><img src="../../../assets/{{y.image}}.png" alt=""></ion-card-subtitle>
                   <ion-card-title style="color: white; font-size: 20px;"> <strong>{{y.name}}</strong></ion-card-title>
                 </ion-card-header>
                 <div class="row">
@@ -84,7 +84,7 @@
               <h1 class="card_title"><strong>Some of our offers</strong></h1>
               <ion-card   *ngFor="let z of cd" style="background-color: black; width: 90%;margin-top: 30px">
                 <ion-card-header>
-                  <ion-card-subtitle><img src="{{z.image}}.png" alt=""/></ion-card-subtitle>
+                  <ion-card-subtitle><img src="../../../assets/{{z.image}}.png" alt=""/></ion-card-subtitle>
                   <ion-card-title style="color: white; font-size: 20px;"><strong>{{z.name}}</strong></ion-card-title>
                 </ion-card-header>
                 <div class="row">
